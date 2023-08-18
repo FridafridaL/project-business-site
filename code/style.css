@@ -5,7 +5,7 @@
 
 body {
 
-  background-color: #d1f3ee;
+  background-color: #ebf7f5;
   
 }
 
@@ -27,11 +27,12 @@ header h1 {
   
 }
 form {
-  width: 100%;
-  padding: 1git addrem;
+
   border-radius: 6px;
   box-shadow: 0 0 10px 0;
-  background-color: aliceblue;
+  background-color: white;
+
+ 
 }
 
 button {
@@ -41,6 +42,9 @@ button {
   border-radius: 1rem;
   display: block;
   margin: auto;
+  background-color: rgb(209, 246, 246);
+  border:none;
+
 }
 
 input[type="text"],
@@ -56,8 +60,11 @@ input[type="password"]
   
 }
 main{
-  padding: 0 8rem;
+  padding: 2rem;
+  display: block;
+  margin: auto;
 }
+
 .main-box {
   display: flex;
 flex-direction: column;
@@ -81,10 +88,12 @@ justify-content: flex-start;
 }
 
 .boxes {
-  padding: 20px;
-  margin: 20px;
+  padding: 1rem;
+  margin:  1rem;
 }
-
+fieldset{
+  width: 100%;
+}
 textarea {
   width: 100%;
 }
@@ -95,6 +104,19 @@ footer {
 
 /* tablet */
 @media (min-width: 667px) and (max-width: 1024px) {}
-
+ form {
+    padding:  2rem 2rem 2rem;
+  }
 /* desktop */
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+  main{
+    padding: 0 8rem;
+  }
+  form {
+    padding:  2rem 2rem 2rem;
+  }
+  .boxes {
+    padding: 20px;
+    margin: 20px;
+  }
+}
