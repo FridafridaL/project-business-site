@@ -4,12 +4,9 @@
 }
 
 body {
-
   background-color: #ebf7f5;
   
 }
-
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/boat.jpg");
   background-size: cover;
@@ -32,7 +29,6 @@ form {
   box-shadow: 0 0 10px 0;
   background-color: white;
 
- 
 }
 
 button {
@@ -50,73 +46,81 @@ button {
 input[type="text"],
 input[type="tel"],
 input[type="email"],
-input[type="password"]
+input[type="password"],
+textarea 
  {
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-top: 4px;
+  margin-bottom: 1rem;
   
-}
-main{
-  padding: 2rem;
-  display: block;
-  margin: auto;
-}
-
-.main-box {
-  display: flex;
-flex-direction: column;
-justify-content: flex-start;
-
-
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 20px;
-}
-
-.text-area {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.boxes {
-  padding: 1rem;
-  margin:  1rem;
-}
-fieldset{
-  width: 100%;
-}
-textarea {
-  width: 100%;
 }
 
 footer {
   text-align: center;
 }
 
+.boxes{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+width: 100%;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 1rem;
+}
+
+.main-box {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  
+}
+
+.text-area {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.choose-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
 /* tablet */
-@media (min-width: 667px) and (max-width: 1024px) {}
+@media (min-width: 667px) and (max-width: 1024px) {
  form {
     padding:  2rem 2rem 2rem;
   }
+
+}
+
+
 /* desktop */
 @media (min-width: 1025px) {
-  main{
-    padding: 0 8rem;
-  }
-  form {
+
+  form { 
     padding:  2rem 2rem 2rem;
-  }
-  .boxes {
-    padding: 20px;
-    margin: 20px;
+   }
+   .container {
+    width: 60rem;
+    
   }
 }
