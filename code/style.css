@@ -1,27 +1,48 @@
-body {
-  padding: 1rem;
-  /* text-align: center; */
-  background-color: #d1f3ee;
-  
+*, * ::after ::before{
+  margin: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #ebf7f5;
+  
+}
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), url("image/boat.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/boat.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: aqua;
+  color: white;
   text-align: center;
-  padding: 16.25rem 0;
+  padding: 10rem 0;
 }
 
+ h1 {
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+  display: inline-block; /* To make the background adjust to the text content */
+  padding: 1rem; /* Add some spacing around the text */
+  border-radius: 0.5rem;
+  
+}
 form {
+
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0.625rem 0;
+  background-color: white;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea 
+ {
   width: 100%;
-  padding: 0.2rem;
-  border-radius: 6px;
-  box-shadow: 0 0 10px 0;
-  background-color: aliceblue;
+  padding: 0.5rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.313rem;
+  margin-bottom: 1rem;
+  
 }
 
 button {
@@ -31,57 +52,75 @@ button {
   border-radius: 1rem;
   display: block;
   margin: auto;
-}
+  background-color: rgb(209, 246, 246);
+  border:none;
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="password"]
- {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 4px;
-  
-}
-.main-box {
-  display: flex;
-flex-direction: column;
-justify-content: flex-start;
-
-
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 20px;
-}
-
-.text-area {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.boxes {
-  padding: 20px;
-  margin: 20px;
-}
-
-textarea {
-  width: 100%;
 }
 
 footer {
   text-align: center;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  
+}
+.main-box {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+.text-area {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.choose-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.313rem;
+  margin-bottom: 1rem;
+}
 
 /* tablet */
-@media (min-width: 667px) and (max-width: 1024px) {}
+@media (min-width: 667px) and (max-width: 1024px) {
+ form {
+    padding:  2rem 2rem 2rem;
+  }
+
+}
+
 
 /* desktop */
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+  
+  h1 {
+  padding: 2rem; /* Add some spacing around the text */
+
+}
+  form { 
+    padding:  2rem 2rem 2rem;
+   }
+   .container {
+    width: 60rem;
+    
+  }
+}
